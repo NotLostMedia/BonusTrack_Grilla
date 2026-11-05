@@ -4,6 +4,7 @@ Sitio estático (HTML + CSS + JS, sin dependencias ni build).
 
 ## Estructura
 - `index.html`: landing
+- `bonus-track.html`, `club-grilla.html`, `grilla-lab.html`: páginas del menú
 - `matilda.html`, `articulo-19.html`, `vera.html`, `no-fitness.html`: historias
 - `styles.css`, `script.js`, `assets/`
 
@@ -20,4 +21,4 @@ En cada página de historia buscá `data-youtube=""` y poné el ID del video
 
 ## Pendientes
 - Links de Google Play y App Store (en `index.html`, buscá `href="#"`).
-- Link de inscripción de Grilla Lab.
+- Los mails de contacto (`club@grilla.com.ar`, `lab@grilla.com.ar`) ya son links `mailto:`.
