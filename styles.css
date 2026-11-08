@@ -108,3 +108,9 @@ footer small{font-size:clamp(11px,1vw,14px);text-align:right;color:#ddd}
 @media(max-width:760px){.info{grid-template-columns:1fr}.info aside{padding-left:0}}
 
 @supports(height:100svh){.hero{min-height:clamp(300px,min(63vw,calc(100svh - 24px)),805px)}}
+
+/* efecto de píxeles que caen sobre la foto (lo crea script.js) */
+.story .herowrap{position:relative;overflow:hidden;margin-top:clamp(20px,4vw,50px)}
+.story .herowrap.inset{width:calc(100% - clamp(8px,1.4vw,20px));margin-inline:auto;border-radius:10px}
+.story .herowrap .hero-img{margin:0;width:100%;border-radius:0}
+.pixdrip{position:absolute;left:0;top:0;display:block;color:var(--c);pointer-events:none}
