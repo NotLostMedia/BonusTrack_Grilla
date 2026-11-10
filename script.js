@@ -1,3 +1,11 @@
+// 0) Ícono de la pestaña (en las historias lo agrega el script; en el resto va en el <head>).
+(function(){
+  if(document.querySelector('link[rel~="icon"]')) return;
+  [['icon','assets/favicon.ico','any'],['icon','assets/favicon-32.png','32x32'],['apple-touch-icon','assets/apple-touch-icon.png','']].forEach(function(d){
+    var l=document.createElement('link'); l.rel=d[0]; l.href=d[1]; if(d[2]) l.setAttribute('sizes',d[2]); document.head.appendChild(l);
+  });
+})();
+
 // 1) Videos: poné el ID de YouTube en data-youtube="" (lo que va después de "v=" en la URL).
 document.querySelectorAll('.video .frame').forEach(function(f){
   var id=(f.dataset.youtube||'').trim();
